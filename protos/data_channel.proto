@@ -1,0 +1,11 @@
+syntax = "proto3";
+
+// `java_package` should match the package name you declare for `androidPackage` in your pubspec.yaml
+option java_package = "com.example.flutter_channel_sample";
+option java_outer_classname = "Leaf";
+option objc_class_prefix = "Leaf";
+
+message DataChannel {
+    string path = 1;
+    repeated string sqlList = 2;
+}
